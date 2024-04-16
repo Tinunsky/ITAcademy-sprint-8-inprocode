@@ -1,4 +1,4 @@
-Inprocode
+<b>Inprocode</b>
 
 Overview
 The project aims to practice frontend state management using Context, implement graphical representations using Chart.js or similar libraries, and integrate multi-language support using i18n. The project focuses on creating user interfaces and leveraging third-party libraries efficiently.
