@@ -49,13 +49,13 @@ Components:
 - Allows users to navigate through weeks using arrow buttons.
 
 *GraphicData
--Displays graphical representation of weekly expenses using Chart.js.
--Includes additional components for today's expenses and variation between today and yesterday.
+- Displays graphical representation of weekly expenses using Chart.js.
+- Includes additional components for today's expenses and variation between today and yesterday.
 
 *TodayExpenses
--Shows today's total expenses.
--VariationTodayYesterday
--Displays the % variation between today's and yesterday's expenses.
+- Shows today's total expenses.
+- VariationTodayYesterday
+- Displays the % variation between today's and yesterday's expenses.
 
 Testing
 Each component's functionality is accompanied by Jest tests to ensure proper behavior and functionality.
