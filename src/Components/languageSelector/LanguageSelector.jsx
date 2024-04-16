@@ -22,8 +22,8 @@ export function LanguageSelector() {
                 src={locales[locale].flag}
                 alt={locales[locale].title}
                 style={{
-                  width: "40px",
-                  height: "40px",
+                  width: "35px",
+                  height: "35px",
                   borderRadius: "60px",
                   cursor: "pointer",
                   marginBottom: "10px",

@@ -1,7 +1,7 @@
 import { WeeksExpensesProvider } from "./contexts/WeeksExpensesProvider";
 import { TotalBalance } from './components/totalBalance/TotalBalance';
-import { GraphicData } from './components/graphicData/GraphicData';
 import { LanguageSelector } from './components/languageSelector/LanguageSelector';
+import { GraphicData } from './components/graphicData/GraphicData';
 
 export default function App() {
   return (
