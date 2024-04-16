@@ -8,17 +8,21 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "test": "jest"
+    "test": "jest --verbose"
   },
   "dependencies": {
     "chart.js": "^4.4.2",
+    "i18next": "^23.11.2",
+    "i18next-browser-languagedetector": "^7.2.1",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-i18next": "^14.1.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.24.4",
     "@babel/preset-react": "^7.24.1",
+    "@swc/jest": "^0.2.36",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.2",
     "@types/react": "^18.2.66",
@@ -36,9 +40,9 @@
   },
   "jest": {
     "testEnvironment": "jsdom",
-    "transform": {
-      "^.+\\.jsx?$": "babel-jest",
-      "^.+\\.svg$": "jest-transformer-svg"
+    "moduleNameMapper": {
+      "\\.(svg)$": "<rootDir>/src/components/TotalBalance/__tests__/svgMock.js",
+      "\\.(png)$": "<rootDir>/src/components/LanguageSelector/__tests__/pngMock.js"
     }
   }
 }

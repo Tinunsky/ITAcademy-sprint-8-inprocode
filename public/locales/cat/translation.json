@@ -1,0 +1,19 @@
+{
+    "totalBalance":  "Balanç total",
+    "expensesPerDay": "Despeses per dia - Setmana",
+    "days": {
+        "monday": "Dl.",
+        "tuesday": "Dm.",
+        "wednesday": "Dc.",
+        "thursday": "Dj.",
+        "friday": "Dv.",
+        "saturday": "Ds.",
+        "sunday": "Dg."
+    },
+    "todayExpenses": "Despeses avui",
+    "comparedToYesterday": "respecte a ahir"
+}
+
+
+
+

@@ -1,7 +1,9 @@
 import { Bar } from "react-chartjs-2";
-import { weekData } from "../weekData";
-import { TodayExpenses } from "./TodayExpenses";
-import { VariationTodayYesterday } from "./VariationTodayYesterday";
+import { useContext, useEffect } from "react";
+import { WeeksExpensesContext } from "../../contexts/WeeksExpensesProvider";
+import { TodayExpenses } from './../todayExpenses/TodayExpenses';
+import { VariationTodayYesterday } from './../variationTodayYesterday/VariationTodayYesterday';
+import { useTranslation } from "react-i18next";
 import {
   Chart as ChartJS,
   BarElement,
@@ -14,7 +16,14 @@ import {
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 
 export function GraphicData() {
-  const data = weekData;
+  const { currentWeekData } = useContext(WeeksExpensesContext);
+  const { t } = useTranslation();
+
+  const data = currentWeekData;
+  useEffect(() => {
+  }, [t]);
+
+  const label = currentWeekData.datasets[0].label;
 
   const options = {
     responsive: true,
@@ -36,7 +45,7 @@ export function GraphicData() {
 
   return (
     <div className="graphic-wrapper">
-      <h2 style={{ textAlign: "center" }}>Expenses - Last week</h2>
+      <h2 style={{ textAlign: "center" }}>{label}</h2>
       <Bar data={data} options={options} />
       <div className="line"></div>
       <div style={{ display: "flex", justifyContent: "space-between" }}>

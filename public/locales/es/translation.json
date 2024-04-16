@@ -1,0 +1,15 @@
+{
+    "totalBalance":  "Balance total",
+    "expensesPerDay": "Gastos por día - Semana",
+    "days": {
+        "monday": "Lun",
+        "tuesday": "Mar",
+        "wednesday": "Mié",
+        "thursday": "Jue",
+        "friday": "Vie",
+        "saturday": "Sáb",
+        "sunday": "Dom"
+    },
+    "todayExpenses": "Gastos de hoy",
+    "comparedToYesterday": "respecto a ayer"
+}
