@@ -16,7 +16,7 @@ describe('LanguageSelector', () => {
     expect(queryByAltText('Català') !== null).toBe(true);
   });
 
-  test('cambia el idioma cuando se hace clic en un botón de selección de idioma', () => {
+  test('Cambia el idioma cuando se hace clic en un botón de selección de idioma', () => {
     const { getByAltText } = render(<LanguageSelector />);
 
     fireEvent.click(getByAltText('Español'));
